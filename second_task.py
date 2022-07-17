@@ -1,4 +1,3 @@
-#region python >= 3
 class FirstMethodQueue:
     def __init__(self ,array):
         print(f"Array: {array}")
@@ -43,4 +42,3 @@ if "__main__" == __name__:
     num2 = array2.FirstOut()
     array2.FirstIn(20)
     print(array2.array, num2)
-#endregion
