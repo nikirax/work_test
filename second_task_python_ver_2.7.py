@@ -16,6 +16,7 @@ class FirstMethodQueue:
             return out_element
         except Exception as ex:
             print ex 
+# плюсы минимум сторонних методов, минусы тяжело читать и есть костыли, грубо говоря это реализация через индексы
 class SecondMethodQueue:
     def __init__(self, array):
         print "Array:", array
@@ -32,7 +33,7 @@ class SecondMethodQueue:
             out_element = None
         print "You have received an item:", out_element
         return out_element
-
+# плюсы удобно читать и все красивенько, минусы как по мне не сильно надежно делать через системные методы, а это реализация через методы
 if "__main__" == __name__:
     array1 = FirstMethodQueue(array=[1,2,3,4])
     num1 = array1.FirstOut()
